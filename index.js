@@ -21,6 +21,8 @@ div.addEventListener('click', clickHandler, true);
 
 function clickHandler(event) {
     const {target, currentTarget} = event;
+    const box = currentTarget.children.box;
+    
         if (currentTarget === target) {
             updateScore(-1);
         } else {
