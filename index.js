@@ -1,10 +1,10 @@
-const btnCollection = document.querySelectorAll('section > button');
-
+const btnCollection = document.querySelectorAll('button');
+const img = document.querySelector('img')
 
 for (const btn of btnCollection) {
     btn.addEventListener('click', clickHandler)
 }
 
-function clickHandler ({target: {parentNode, dataset: {color}}} ) {
-   parentNode.style.backgroundColor = color;
+function clickHandler (event) {
+   img.setAttribute ('src', event.target.dataset.src)
 }

@@ -1,6 +1,7 @@
 body {
     margin: 0;
  }
- section {
-     border: 1px solid black;
+ img {
+    width: 450px;
+    height: 350px;
  }
