@@ -1,21 +1,17 @@
-body {
-   margin: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   background-color: beige;
-}
-.wrapper {
-    width: 200px;
-    background-color: blanchedalmond;
-    border: 2px solid salmon;
-    border-radius: 10px;
-
-    padding: 25px;
+.lamp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+
+.lamp-off {
+    border: 2px solid black;
+    background-color: white;
+}
+
+
+.lamp-on {
+    border: 2px solid coral;
+    background-color: yellow;
 }

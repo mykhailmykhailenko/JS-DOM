@@ -1,14 +1,24 @@
 const root = document.querySelector('#root');
-
+const toggler = document.querySelector('.toggler');
 /*
 Створити квадрат 100 на 100пкс і відобразити його на сторінці
 (він має бути дитиною div#root)
 */
 
-const element = document.createElement('section')
-element.style.width = '100px';
-element.style.height = '100px';
-element.style.backgroundColor = 'black';
-element.style.border = '1px solid black';
-root.append(element)
 
+const lamp = document.createElement('div');
+
+lamp.id = 'testID' // добавление эелементу ID
+
+lamp.classList.add('lamp','lamp-off'); // добавление эелементу class
+root.append(lamp);
+
+
+toggler.addEventListener('click', toggle);
+
+function toggle() {
+    lamp.classList.toggle('lamp-off');
+    lamp.classList.toggle('lamp-on');
+
+    console.log(lamp.classList);
+}
