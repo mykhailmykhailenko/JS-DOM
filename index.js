@@ -25,11 +25,11 @@ function createUser(obj) {
 
     const div = document.createElement('div');
     div.classList.add('userCard');
-    
+
     const img = document.createElement('img');
     img.setAttribute('src', obj.profilePicture);
     img.classList.add('userPhoto');
-    
+
     const h1 = document.createElement('h1');
     h1.innerText = `${obj.name}`;
     h1.classList.add('userName');
@@ -41,9 +41,9 @@ function createUser(obj) {
     const button = document.createElement('button');
     button.innerText = "Connect";
     button.classList.add('btn');
-    
+
     div.append(img, h1, p, button);
-    
+
     return div
 }
 
@@ -63,4 +63,3 @@ function logger (event) {
 }
 
 root.append(...userArray);
-
